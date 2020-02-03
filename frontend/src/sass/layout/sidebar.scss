@@ -1,0 +1,99 @@
+.sidebar {
+  background-color: $grey-dark;
+  display: flex;
+  flex: 0;
+  color: $white;
+  padding: 2rem;
+  font-size: 1.4rem;
+  flex-direction: column;
+
+  &__menu {
+    display: flex;
+
+    &--items {
+      list-style: none;
+    }
+
+    &--item {
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    .active {
+      background-color: $grey-light-3;
+      width: 9rem;
+      border-radius: 1rem;
+    }
+
+    &--icon {
+      height: 2rem;
+      width: 3rem;
+      fill: currentColor;
+    }
+  }
+
+  &__notebook {
+    display: flex;
+    flex-direction: column;
+
+    &--add {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    &--items {
+      list-style: none;
+    }
+
+    &--item {
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      white-space: nowrap;
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    &--remove {
+      display: flex;
+      align-items: center;
+      transform: translateX(0);
+      width: 0;
+      margin-left: 2rem;
+
+      transition: all 0.2s;
+
+      svg:hover {
+        fill: red;
+      }
+    }
+
+    &--item:hover &--remove {
+      opacity: 1;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .active {
+      background-color: $grey-light-3;
+      border-radius: 1rem;
+    }
+  }
+}

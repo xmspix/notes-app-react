@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 50%;
+  flex-direction: column;
+  padding: 2rem;
+  font-size: 1.4rem;
+  background-color: $white;
+  position: relative;
+
+  @media only screen and (min-width: 20em) and (max-width: 40.62em) {
+    border-top: 2px solid #eee;
+  }
+
+  h1 {
+    border-bottom: 1px solid $grey-light-4;
+  }
+
+  &--section {
+    flex: 1;
+  }
+
+  .labelTitle,
+  .labelContent {
+    position: absolute;
+    z-index: -999;
+    color: $grey-light-4;
+  }
+
+  .labelTitle {
+    top: 3rem;
+    left: 2rem;
+    font-size: 2rem;
+  }
+  .labelContent {
+    top: 13rem;
+    left: 2rem;
+  }
+
+  .active {
+    z-index: 999;
+  }
+}
