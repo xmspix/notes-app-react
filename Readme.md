@@ -1,5 +1,7 @@
 # Notes App
 
+Live Demo : https://xmspix.github.io/notes-app-react/
+
 This app was build using :
 
 Frontend: Webpack, React, Sass
